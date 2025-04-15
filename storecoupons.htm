@@ -1,70 +1,90 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
-  <title>Store Coupons</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gibeau Homepage</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #e3f2fd;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d47a1;
+    }
+
+    .grid-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .column {
+      background-color: #bbdefb;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .column h2 {
+      color: #1565c0;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .link {
+      background-color: #1976d2;
+      border-radius: 8px;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      text-align: center;
+      transition: background-color 0.2s;
+    }
+
+    .link a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+    }
+
+    .link:hover {
+      background-color: #0d47a1;
+    }
+  </style>
 </head>
 <body>
-<big style="color: rgb(255, 0, 0);"><big><span
- style="font-weight: bold;"><big>Store Coupons</big><br>
-<big><big><br>
-</big></big></span></big></big>
-<table style="text-align: left; width: 851px; height: 250px;" border="1"
- cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td><big><big><big style="color: rgb(51, 255, 51);"><big><span
- style="font-weight: bold;">Grocery</span></big></big></big></big></td>
-      <td><big><big><big style="color: rgb(51, 255, 51);"><big><span
- style="font-weight: bold;">Pharmacy</span></big></big></big></big></td>
-      <td><big><big><big
- style="font-weight: bold; color: rgb(51, 255, 51);"><big>Department</big></big></big></big></td>
-      <td><big style="color: rgb(51, 255, 51);"><big><big><big><span
- style="font-weight: bold;">News</span></big></big></big></big></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold;"><big><big><a
- href="http://www.stopandshop.com/?_requestid=1606339">Stop &amp; Shop</a></big></big></td>
-      <td style="font-weight: bold;"><big><big><a href="http://cvs.com">CVS</a></big></big></td>
-      <td style="font-weight: bold;"><a
- href="http://www.macys.com/?cm_mmc=GOOGLE_Trademark-_-Trademark_Exact_Google_Macy%27s-_-30801319280_Exact-_-macy%27s_mkwid_sJhzcajHR%7Cdc_30801319280%7C-%7CJhzcajHR"><big><big>Macy's</big></big></a></td>
-      <td><a href="http://www.courant.com/"><big
- style="font-weight: bold;"><big>The Courant</big></big></a></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold;"><big><big><a
- href="http://weeklyads.aldi.us/Aldi/Entry/LandingContent?storeid=2623593&amp;sneakpeek=N&amp;listingid=0">Aldi</a></big></big></td>
-      <td style="font-weight: bold;"><big><big><a
- href="https://www.riteaid.com/wellness/dashboard#.U_EMVvldWtU">Rite Aid</a></big></big></td>
-      <td style="font-weight: bold;"><a href="http://www.jcpenney.com/"><big><big>Penney's</big></big></a></td>
-      <td><a href="http://www.newbritainherald.com/"><big><big><span
- style="font-weight: bold;">The Herald</span></big></big></a></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold;"><big><big></big></big></td>
-      <td style="font-weight: bold;"><big><big><a
- href="http://www.walgreens.com/">Walgreens</a></big></big></td>
-      <td style="font-weight: bold;"><big><big></big></big></td>
-      <td><a href="http://www.legacy.com/obituaries/hartfordcourant/"><span
- style="font-weight: bold;">Courant Obits</span></a></td>
-    </tr>
-    <tr>
-      <td><big><big></big></big></td>
-      <td><big><big></big></big></td>
-      <td><big><big></big></big></td>
-      <td><a href="http://www.newbritainherald.com/obituaries/"><span
- style="font-weight: bold;">Herald Obits</span></a></td>
-    </tr>
-    <tr>
-      <td><big><big></big></big></td>
-      <td><big><big></big></big></td>
-      <td><big><big></big></big></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<big style="color: rgb(255, 0, 0);"><big><span
- style="font-weight: bold;"></span></big></big>
+  <h1>Store Coupons</h1>
+  <div class="grid-table">
+    <div class="column">
+      <h2>Grocery</h2>
+      <div class="link"><a href="http://www.stopandshop.com/?_requestid=1606339">Stop &amp; Shop</a></div>
+      <div class="link"><a href="http://weeklyads.aldi.us/Aldi/Entry/LandingContent?storeid=2623593&amp;sneakpeek=N&amp;listingid=0">Aldi</a></div>
+    </div>
+    <div class="column">
+      <h2>Pharmacy</h2>
+      <div class="link"><a href="http://cvs.com">CVS</a></div>
+      <div class="link"><a href="https://www.riteaid.com/wellness/dashboard#.U_EMVvldWtU">Rite Aid</a></div>
+      <div class="link"><a href="http://www.walgreens.com/">Walgreens</a></div>
+    </div>
+    <div class="column">
+      <h2>Department</h2>
+      <div class="link"><a href="http://www.macys.com/">Macy's</a></div>
+      <div class="link"><a href="http://www.jcpenney.com/">Penney's</a></div>
+    </div>
+    <div class="column">
+      <h2>News</h2>
+      <div class="link"><a href="http://www.courant.com/">The Courant</a></div>
+      <div class="link"><a href="http://www.newbritainherald.com/">The Herald</a></div>
+      <div class="link"><a href="http://www.legacy.com/obituaries/hartfordcourant/">Courant Obits</a></div>
+      <div class="link"><a href="http://www.newbritainherald.com/obituaries/">Herald Obits</a></div>
+    </div>
+  </div>
 </body>
 </html>
